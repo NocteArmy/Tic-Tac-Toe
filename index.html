@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	
+  <head>
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+        
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  </head>
+	
+  <body>
+    <header></header>
+
+    <div class="jumbotron-fluid">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="title">Tic Tac Toe Game</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="game-board">
+            <div class="game-area">
+              <div id="start-screen">
+                <p class="board-text ml-2 mr-2">How do you want to play?</p>
+                <div class="row no-gutters justify-content-center">
+                  <button id="one-player" type="button" class="btn btn-outline-light mr-1">One Player</button>
+                  <button id="two-player" type="button" class="btn btn-outline-light ml-1">Two Player</button>
+                </div>
+              </div>
+              <div id="choice-screen" class="hide">
+                <p id="1p-text" class="board-text ml-2 mr-2">Would you like to be X or O?</p>
+                <p id="2p-text" class="board-text ml-2 mr-2 hide">Player 1: Would you like X or O?</p>
+                <div class="row no-gutters justify-content-center">
+                  <button id="x" type="button" class="btn btn-outline-light mr-2">X</button>
+                  <button id="o" type="button" class="btn btn-outline-light ml-2">O</button>
+                </div>
+                <div class="row no-gutters justify-content-center back">
+                  <button id="back-btn" type="button" class="btn btn-outline-light"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+              </div>
+              <div id="game-screen" class="hide">
+                <div class="row no-gutters">
+                  <div id="section-1" class="col-4 game-section"></div>
+                  <div id="section-2" class="col-4 game-section"></div>
+                  <div id="section-3" class="col-4 game-section"></div>
+                </div>
+                <div class="row no-gutters">
+                  <div id="section-4" class="col-4 game-section"></div>
+                  <div id="section-5" class="col-4 game-section"></div>
+                  <div id="section-6" class="col-4 game-section"></div>
+                </div>
+                <div class="row no-gutters">
+                  <div id="section-7" class="col-4 game-section"></div>
+                  <div id="section-8" class="col-4 game-section"></div>
+                  <div id="section-9" class="col-4 game-section"></div>
+                </div>
+              </div>
+              <div id="end-screen" class="hide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="score" class="row justify-content-center hide">
+          <div class="score">
+            <p id="player-one"></p>
+            <p id="player-one-score"></p>
+          </div>
+          <div class="score">
+            <p id="player-two"></p>
+            <p id="player-two-score"></p>
+          </div>
+          <div class="score">
+            <button id="reset" type="button" class="btn btn-outline-light">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  <script src="script.js"></script>
+  </body>
+    
+</html>
