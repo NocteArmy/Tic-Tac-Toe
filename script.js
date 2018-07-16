@@ -7,6 +7,7 @@ $(document).ready(() => {
     ["7", "8", "9"],
   ]
   $("#reset").on('click', () => {
+    if(isItEndGame) { return null; }
     $("#game-screen").addClass('hide');
     $("#score").addClass('hide');
     $("#start-screen").removeClass('hide');
